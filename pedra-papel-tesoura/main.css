@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(37, 47, 59);
+}
+
+header{
+    background-color: white;
+    padding: 20px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 30px;
+    font: bolder;
+}
+
+.score-board{
+    color: white;
+    font-size: 46px;
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+}
+
+.badge{
+    position: absolute;
+    background-color: red;
+    font-size: 20px;
+    padding: 2px 5px;
+}
+
+#user-label{
+    top: 30px;
+    left: -25px;
+}
+
+#comp-label{
+    top: 30px;
+    right: -30px;
+}
+
+.result{
+    text-align: center;
+    font: bolder;
+    color: white;
+    font-size: 46px;
+}
+
+.choices{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.choice{
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 25px;
+    background-color: rgb(45, 58, 73);
+}
+
+.choice:hover{
+    background-color: rgb(28, 37, 46);
+    transition: 200ms;
+}
+
+.choice img{
+    height: 200px;
+    width: 200px;
+}
+
+#action-message{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
