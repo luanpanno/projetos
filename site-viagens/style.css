@@ -4,11 +4,17 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 header{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 0 10%;
+    justify-content: space-between;
+    width: 70%;
 }
 
 ol{
@@ -34,7 +40,9 @@ a{
 
 p{
     text-align: justify;
-    margin: 10px 54vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
 }
 
 footer{
