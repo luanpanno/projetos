@@ -376,21 +376,23 @@ img{
 .footer{
     background-color: #242a2c;
     padding: 50px 0 50px;
-    color: #454e51;
+    color: #707070;
     font-size: 14px;
 }
+
+.footer .container{}
 
 .footer__links li{
     list-style: none;
 }
 
 .footer__links a{
-    color: #454e51;
+    color: #707070;
     display: block;
     font-weight: 600;
     text-decoration: none;
-    width: 75px;
-    padding: 10px;
+    width: 90px;
+    margin: 15px 0;
     transition: color .2s;
 }
 
