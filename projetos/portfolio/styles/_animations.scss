@@ -1,0 +1,26 @@
+@keyframes plant{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-30%);
+    }
+}
+
+@keyframes me{
+    from{
+        transform: rotateZ(-2deg);
+    }
+    to{
+        transform: rotateZ(2deg);
+    }
+}
+
+@keyframes clock{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}

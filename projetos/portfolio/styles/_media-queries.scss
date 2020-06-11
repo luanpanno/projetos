@@ -1,0 +1,79 @@
+@media (max-width: 1332px){
+    html{
+        font-size: 53%;
+    }
+
+    .splash{
+        max-width: 50%;
+    }
+
+    svg{
+        width: 80%;
+    }
+
+    nav{
+        width: 100%;
+    }
+}
+
+@media (max-width: 754px){
+    html{
+        font-size: 45%;
+    }
+
+    svg{
+        height: 60%;
+    }
+
+    .splash{
+        display: none;
+    }
+
+    .main-head{
+        width: 100%;
+        margin: 0;
+    }
+
+    nav{
+        .logo{
+            @include flex(column, center, center);
+            flex: 1 1 20rem;
+            margin-top: 2rem;
+        }
+
+        ul{
+            flex: 1 1 60rem;
+            margin: 2rem 0;
+        }
+    }
+
+    .intro-text{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .intro-social{
+        @include flex(row, center, center);
+        a{
+            margin: 2rem;
+        }
+    }
+
+    .intro-images{
+        text-align: center;
+    }
+
+    .travelly, .elena-joy{
+        flex: 1 1 50rem;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    form{
+        padding: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+.main-head{
+    width: 95%;
+    margin: 0 0 0 auto;
+}
+
+nav{
+    @include flex(row, space-between, center);
+    min-height: 10vh;
+    width: 60%;
+    flex-wrap: wrap;
+
+    .logo{
+        @include flex(row, flex-start, center);
+        flex: 1 1 10rem;
+
+        h1{
+            margin: 0 2rem;
+        }
+    }
+
+    ul{
+        @include flex(row, space-around, center);
+        flex: 1 1 40rem;
+    }
+}
+
+.active{
+    background: $gray-text;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}

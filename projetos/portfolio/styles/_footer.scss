@@ -1,0 +1,16 @@
+footer{
+    background: $bg-color;
+    color: white;
+    min-height: 10vh;
+    padding: 0% 5%;
+    @include flex(row, center, center);
+    
+    h4{
+        flex: 1 1 40rem;
+    }
+
+    ul{
+        flex: 1 1 40rem;
+        @include flex(row, space-around, center);
+    }
+}

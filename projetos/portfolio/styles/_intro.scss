@@ -1,0 +1,57 @@
+.intro{
+    min-height: 80vh;
+    width: 90%;
+    margin: auto;
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+
+    h2{
+        font-size: 8rem;
+        padding-top: 2rem;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    h3{
+        font-size: 5rem;
+        padding: 2rem 0;
+    }
+
+    p{
+        padding-top: 2rem;
+        color: $gray-text;
+    }
+}
+
+.splash{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.intro-social{
+    margin-top: 4rem;
+
+    a:not(:last-child){
+        margin-right: 5rem;
+    }
+}
+
+.intro-text, .intro-images{
+    flex: 1 1 40rem;
+}
+
+#me{
+    animation: me 10s ease infinite alternate;
+    transform-origin: bottom;
+}
+
+#clock-arrow{
+    animation: clock 60s infinite linear;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
