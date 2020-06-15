@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+/* main color: #00FFB0 #00E69D*/
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, button{
+    font-family: 'Roboto', sans-serif;
+}
+/*  */
+
+/* Nav */
+.onscroll{
+    height: 8vh;
+    background-color: #00E69D;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, .4);
+    z-index: 2;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: transparent;
+    z-index: 2;
+    transition: 400ms;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: -1px;
+    font-weight: lighter;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li{
+    list-style: none;
+    margin: 10px;
+}
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 300ms ease;
+}
+/*  */
+
+/* Capa */
+.capa{
+    background-image: url(./imgs/backgrounds/capa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa-content{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.capa-content .text{
+    text-align: center;
+    color: white;
+    border-bottom: 20px solid white;
+    font-size: 1.6em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+    min-width: 300px;
+    padding: 20px 0;
+}
+
+.capa-content .typewritter{
+    position: relative;
+    width: 100%;
+}
+
+.capa-content .typewritter::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    width: 2px;
+    height: 30px;
+    border-right: 2.5px solid white;
+    animation: blink 1000ms infinite ease;
+}
+
+.quadrado{
+    width: 25px;
+    height: 25px;
+    margin-top: -15px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+.saber-mais{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .2);
+    border: 2px solid white;
+    margin-top: 25px;
+    padding: 5px 25px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 200ms;
+    white-space: nowrap;
+}
+
+.saber-mais:hover{
+    background-color: rgba(0, 0, 0, .4);
+}
+/*  */
+
+.title-section{
+    border-bottom: 1px solid #00E69D;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+/* Sobre */
+.about{
+    background-color: rgb(245, 245, 245);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, .2);
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.profile h1{
+    margin-bottom: 10px;
+}
+
+.profile img{
+    max-height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades h2{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.lista-habilidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lista-habilidades li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.lista-habilidades li i{
+    font-size: 2em;
+}
+/*  */
+
+/* Projetos */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.projetos-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+}
+
+.projetos-lista{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projeto-cards{
+    box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, .2);
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.card-img{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img{
+    height: 115%;
+    outline: transparent;
+    transition: transform 500ms;
+}
+
+.card-img img:hover{
+    transform: scale(1.8);
+}
+
+.card-text{
+    margin-top: 10px;
+}
+
+.card-text h2{
+    font-weight: lighter;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.card-text p{
+    color: #00A671;
+    font-weight: lighter;
+}
+
+.visualizar-button{
+    text-decoration: none;
+    color: white;
+    background-color: #00E69D;
+    padding: 5px 15px;
+    border-radius: 25px;
+    transition: all 200ms;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.visualizar-button:hover{
+    background-color: white;
+    color: #00E69D;
+    border: 1px solid #00E69D;
+}
+
+.devradar{
+    text-align: center;
+    box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.devradar img{
+    width: 100%;
+    margin: 10px;
+}
+/*  */
+
+/* Footer */
+.contato{
+    background-image: url(./imgs/backgrounds/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contato-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato-text{
+    background-color: white;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, .2);
+    width: 95%;
+    height: 350px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+ .lista-contato li{
+    list-style: none;
+    margin: 10px;
+}
+
+.lista-contato li i{
+    font-size: 2.4em;
+}
+
+.contato-page ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contatos-link{
+    display: flex;
+    list-style: none;
+    font-size: 3.2em;
+}
+
+.contatos-link a{
+    margin: 0 20px;
+}
+
+.copy{
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+
+@media screen and (max-width: 640px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        background-color: #00E69D;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 250ms ease-in;
+        display: none;
+    }
+    
+    .nav-links li{
+        opacity: 0;
+    }
+    
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    background-color: #00E69D;
+}
+
+.nav-active ul{
+    display: flex;
+}
+
+@keyframes navLinkFade{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,  6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,  -6px);
+}
+
+@media screen and (min-width: 715px){
+    .capa-content{
+        margin-bottom: 150px;
+        margin-right: 25px;
+    }
+
+    .capa-content .text{
+        font-size: 2em;
+        width: 55%;
+        white-space: nowrap;
+    }
+
+    .about-content{
+        width: 75%;
+    }
+
+    .profile{
+        width: 85%;
+    }
+
+    .projetos-content{
+        width: 75%;
+    }
+
+    .projetos-lista{
+        width: 100%;
+    }
+
+    .projeto-cards{
+        width: 350px;
+    }
+
+    .devradar{
+        width: 350px;
+    }
+
+    .contato-text{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 850px){
+    .capa-content .text{
+        width: 45%;
+    }
+
+    .about-content{
+        width: 50%;
+    }
+
+    .projetos-content{
+        width: 100%;
+    }
+
+    .devradar{
+        width: 95%;
+    }
+
+    .devradar img{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 980px){
+
+    .projeto-cards{
+        width: 325px;
+        margin: 10px;
+    }
+
+    .contato-text{
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1068px){
+    .capa-content .text{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1190px){
+    .capa-content .text{
+        width: 35%;
+    }
+   
+    .projetos-content{
+        width: 100%;
+    }
+
+    .projetos-lista{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .capa-content{
+        margin-bottom: 150px;
+        margin-right: 25px;
+    }
+
+    .projeto-cards{
+        width: 20%;
+        height: 375px;
+    }
+}
+
+@media screen and (min-width: 1480px){
+    .capa-content{
+        margin-bottom: 150px;
+        margin-right: 25px;
+    }
+
+    .contato-text{
+        width: 25%;
+    }
+}
